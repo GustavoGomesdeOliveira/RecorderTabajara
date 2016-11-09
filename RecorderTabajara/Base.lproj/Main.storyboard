@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecorderTabajara" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="054-4N-YOr"/>
+                        <viewControllerLayoutGuide type="bottom" id="fht-Bp-XH7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CxT-3L-RZc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="313"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="313" id="SV1-7a-MQH"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="Jm4-sc-eBi" customClass="CellTableViewCell" customModule="RecorderTabajara" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jm4-sc-eBi" id="awq-c8-iC0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MA6-pD-YFg">
+                                                    <rect key="frame" x="18" y="12" width="40" height="39.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Ncx-3j-eDl"/>
+                                                    </constraints>
+                                                    <state key="normal" image="play-button"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-ht-gAP">
+                                                    <rect key="frame" x="71" y="21.5" width="45" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MA6-pD-YFg" firstAttribute="centerY" secondItem="awq-c8-iC0" secondAttribute="centerY" id="8pd-rz-qUv"/>
+                                                <constraint firstItem="ECV-ht-gAP" firstAttribute="leading" secondItem="MA6-pD-YFg" secondAttribute="trailing" constant="13" id="OfA-IH-JDB"/>
+                                                <constraint firstItem="MA6-pD-YFg" firstAttribute="top" secondItem="awq-c8-iC0" secondAttribute="topMargin" constant="4" id="RTk-4k-fhm"/>
+                                                <constraint firstItem="MA6-pD-YFg" firstAttribute="centerY" secondItem="ECV-ht-gAP" secondAttribute="centerY" id="RXX-i6-Ehc"/>
+                                                <constraint firstItem="MA6-pD-YFg" firstAttribute="leading" secondItem="awq-c8-iC0" secondAttribute="leadingMargin" constant="10" id="WfA-j7-AtQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buton" destination="MA6-pD-YFg" id="EZx-l9-4aX"/>
+                                            <outlet property="label" destination="ECV-ht-gAP" id="OIt-WD-GyD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="d5e-Da-HhK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WVv-wb-8xq"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-p8-gSh">
+                                <rect key="frame" x="163" y="366" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLA-wc-EVb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CxT-3L-RZc" firstAttribute="top" secondItem="054-4N-YOr" secondAttribute="bottom" id="SMI-U7-2z2"/>
+                            <constraint firstItem="CxT-3L-RZc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tjf-Ok-LIu"/>
+                            <constraint firstItem="96Z-p8-gSh" firstAttribute="top" secondItem="CxT-3L-RZc" secondAttribute="bottom" constant="33" id="XdP-zK-KpQ"/>
+                            <constraint firstAttribute="trailing" secondItem="CxT-3L-RZc" secondAttribute="trailing" id="csq-RP-chL"/>
+                            <constraint firstItem="CxT-3L-RZc" firstAttribute="centerX" secondItem="96Z-p8-gSh" secondAttribute="centerX" id="irh-pT-e3C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="CxT-3L-RZc" id="PMT-oe-yHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play-button" width="1024" height="1024"/>
+    </resources>
+</document>

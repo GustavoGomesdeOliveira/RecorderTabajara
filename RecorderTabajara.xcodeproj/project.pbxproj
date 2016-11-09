@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06BB14A61DD0AB1A0014081A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14A51DD0AB1A0014081A /* AppDelegate.swift */; };
+		06BB14A81DD0AB1A0014081A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14A71DD0AB1A0014081A /* ViewController.swift */; };
+		06BB14AB1DD0AB1B0014081A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BB14A91DD0AB1B0014081A /* Main.storyboard */; };
+		06BB14AD1DD0AB1B0014081A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BB14AC1DD0AB1B0014081A /* Assets.xcassets */; };
+		06BB14B01DD0AB1B0014081A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BB14AE1DD0AB1B0014081A /* LaunchScreen.storyboard */; };
+		06BB14BB1DD0AB1B0014081A /* RecorderTabajaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14BA1DD0AB1B0014081A /* RecorderTabajaraTests.swift */; };
+		06BB14C61DD0AB1B0014081A /* RecorderTabajaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14C51DD0AB1B0014081A /* RecorderTabajaraUITests.swift */; };
+		06BB14CB1DD0AB1B0014081A /* RecorderTabajara WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 06BB14CA1DD0AB1B0014081A /* RecorderTabajara WatchKit App.app */; };
+		06BB14D11DD0AB1B0014081A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BB14CF1DD0AB1B0014081A /* Interface.storyboard */; };
+		06BB14D31DD0AB1B0014081A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BB14D21DD0AB1B0014081A /* Assets.xcassets */; };
+		06BB14DA1DD0AB1B0014081A /* RecorderTabajara WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 06BB14D91DD0AB1B0014081A /* RecorderTabajara WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		06BB14E11DD0AB1B0014081A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14E01DD0AB1B0014081A /* InterfaceController.swift */; };
+		06BB14E31DD0AB1B0014081A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14E21DD0AB1B0014081A /* ExtensionDelegate.swift */; };
+		06BB14E51DD0AB1B0014081A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14E41DD0AB1B0014081A /* NotificationController.swift */; };
+		06BB14E71DD0AB1B0014081A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB14E61DD0AB1B0014081A /* ComplicationController.swift */; };
+		06BB14E91DD0AB1B0014081A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BB14E81DD0AB1B0014081A /* Assets.xcassets */; };
+		06F4FAA61DD342DB00D4482A /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F4FAA51DD342DB00D4482A /* CellTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06BB14B71DD0AB1B0014081A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BB149A1DD0AB1A0014081A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BB14A11DD0AB1A0014081A;
+			remoteInfo = RecorderTabajara;
+		};
+		06BB14C21DD0AB1B0014081A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BB149A1DD0AB1A0014081A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BB14A11DD0AB1A0014081A;
+			remoteInfo = RecorderTabajara;
+		};
+		06BB14CC1DD0AB1B0014081A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BB149A1DD0AB1A0014081A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BB14C91DD0AB1B0014081A;
+			remoteInfo = "RecorderTabajara WatchKit App";
+		};
+		06BB14DB1DD0AB1B0014081A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06BB149A1DD0AB1A0014081A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06BB14D81DD0AB1B0014081A;
+			remoteInfo = "RecorderTabajara WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06BB14F01DD0AB1B0014081A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				06BB14DA1DD0AB1B0014081A /* RecorderTabajara WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14F41DD0AB1B0014081A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				06BB14CB1DD0AB1B0014081A /* RecorderTabajara WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06BB14A21DD0AB1A0014081A /* RecorderTabajara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecorderTabajara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BB14A51DD0AB1A0014081A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06BB14A71DD0AB1A0014081A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06BB14AA1DD0AB1B0014081A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06BB14AC1DD0AB1B0014081A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06BB14AF1DD0AB1B0014081A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06BB14B11DD0AB1B0014081A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BB14B61DD0AB1B0014081A /* RecorderTabajaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderTabajaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BB14BA1DD0AB1B0014081A /* RecorderTabajaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderTabajaraTests.swift; sourceTree = "<group>"; };
+		06BB14BC1DD0AB1B0014081A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BB14C11DD0AB1B0014081A /* RecorderTabajaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderTabajaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BB14C51DD0AB1B0014081A /* RecorderTabajaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderTabajaraUITests.swift; sourceTree = "<group>"; };
+		06BB14C71DD0AB1B0014081A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BB14CA1DD0AB1B0014081A /* RecorderTabajara WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RecorderTabajara WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BB14D01DD0AB1B0014081A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		06BB14D21DD0AB1B0014081A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06BB14D41DD0AB1B0014081A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06BB14D91DD0AB1B0014081A /* RecorderTabajara WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RecorderTabajara WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BB14DF1DD0AB1B0014081A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		06BB14E01DD0AB1B0014081A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		06BB14E21DD0AB1B0014081A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		06BB14E41DD0AB1B0014081A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		06BB14E61DD0AB1B0014081A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		06BB14E81DD0AB1B0014081A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06BB14EA1DD0AB1B0014081A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F4FAA51DD342DB00D4482A /* CellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
+		77EEAF0E1DD1F42500044702 /* timeburnernormal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeburnernormal.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06BB149F1DD0AB1A0014081A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14B31DD0AB1B0014081A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14BE1DD0AB1B0014081A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14D61DD0AB1B0014081A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BB14991DD0AB1A0014081A = {
+			isa = PBXGroup;
+			children = (
+				06BB14A41DD0AB1A0014081A /* RecorderTabajara */,
+				06BB14B91DD0AB1B0014081A /* RecorderTabajaraTests */,
+				06BB14C41DD0AB1B0014081A /* RecorderTabajaraUITests */,
+				06BB14CE1DD0AB1B0014081A /* RecorderTabajara WatchKit App */,
+				06BB14DD1DD0AB1B0014081A /* RecorderTabajara WatchKit Extension */,
+				06BB14A31DD0AB1A0014081A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06BB14A31DD0AB1A0014081A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14A21DD0AB1A0014081A /* RecorderTabajara.app */,
+				06BB14B61DD0AB1B0014081A /* RecorderTabajaraTests.xctest */,
+				06BB14C11DD0AB1B0014081A /* RecorderTabajaraUITests.xctest */,
+				06BB14CA1DD0AB1B0014081A /* RecorderTabajara WatchKit App.app */,
+				06BB14D91DD0AB1B0014081A /* RecorderTabajara WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06BB14A41DD0AB1A0014081A /* RecorderTabajara */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14A51DD0AB1A0014081A /* AppDelegate.swift */,
+				06F4FAA51DD342DB00D4482A /* CellTableViewCell.swift */,
+				06BB14A71DD0AB1A0014081A /* ViewController.swift */,
+				06BB14A91DD0AB1B0014081A /* Main.storyboard */,
+				06BB14AC1DD0AB1B0014081A /* Assets.xcassets */,
+				06BB14AE1DD0AB1B0014081A /* LaunchScreen.storyboard */,
+				06BB14B11DD0AB1B0014081A /* Info.plist */,
+				77EEAF0E1DD1F42500044702 /* timeburnernormal.ttf */,
+			);
+			path = RecorderTabajara;
+			sourceTree = "<group>";
+		};
+		06BB14B91DD0AB1B0014081A /* RecorderTabajaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14BA1DD0AB1B0014081A /* RecorderTabajaraTests.swift */,
+				06BB14BC1DD0AB1B0014081A /* Info.plist */,
+			);
+			path = RecorderTabajaraTests;
+			sourceTree = "<group>";
+		};
+		06BB14C41DD0AB1B0014081A /* RecorderTabajaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14C51DD0AB1B0014081A /* RecorderTabajaraUITests.swift */,
+				06BB14C71DD0AB1B0014081A /* Info.plist */,
+			);
+			path = RecorderTabajaraUITests;
+			sourceTree = "<group>";
+		};
+		06BB14CE1DD0AB1B0014081A /* RecorderTabajara WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14CF1DD0AB1B0014081A /* Interface.storyboard */,
+				06BB14D21DD0AB1B0014081A /* Assets.xcassets */,
+				06BB14D41DD0AB1B0014081A /* Info.plist */,
+			);
+			path = "RecorderTabajara WatchKit App";
+			sourceTree = "<group>";
+		};
+		06BB14DD1DD0AB1B0014081A /* RecorderTabajara WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14E01DD0AB1B0014081A /* InterfaceController.swift */,
+				06BB14E21DD0AB1B0014081A /* ExtensionDelegate.swift */,
+				06BB14E41DD0AB1B0014081A /* NotificationController.swift */,
+				06BB14E61DD0AB1B0014081A /* ComplicationController.swift */,
+				06BB14E81DD0AB1B0014081A /* Assets.xcassets */,
+				06BB14EA1DD0AB1B0014081A /* Info.plist */,
+				06BB14DE1DD0AB1B0014081A /* Supporting Files */,
+			);
+			path = "RecorderTabajara WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		06BB14DE1DD0AB1B0014081A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06BB14DF1DD0AB1B0014081A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06BB14A11DD0AB1A0014081A /* RecorderTabajara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BB14F51DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajara" */;
+			buildPhases = (
+				06BB149E1DD0AB1A0014081A /* Sources */,
+				06BB149F1DD0AB1A0014081A /* Frameworks */,
+				06BB14A01DD0AB1A0014081A /* Resources */,
+				06BB14F41DD0AB1B0014081A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BB14CD1DD0AB1B0014081A /* PBXTargetDependency */,
+			);
+			name = RecorderTabajara;
+			productName = RecorderTabajara;
+			productReference = 06BB14A21DD0AB1A0014081A /* RecorderTabajara.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06BB14B51DD0AB1B0014081A /* RecorderTabajaraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BB14F81DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajaraTests" */;
+			buildPhases = (
+				06BB14B21DD0AB1B0014081A /* Sources */,
+				06BB14B31DD0AB1B0014081A /* Frameworks */,
+				06BB14B41DD0AB1B0014081A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BB14B81DD0AB1B0014081A /* PBXTargetDependency */,
+			);
+			name = RecorderTabajaraTests;
+			productName = RecorderTabajaraTests;
+			productReference = 06BB14B61DD0AB1B0014081A /* RecorderTabajaraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06BB14C01DD0AB1B0014081A /* RecorderTabajaraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BB14FB1DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajaraUITests" */;
+			buildPhases = (
+				06BB14BD1DD0AB1B0014081A /* Sources */,
+				06BB14BE1DD0AB1B0014081A /* Frameworks */,
+				06BB14BF1DD0AB1B0014081A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BB14C31DD0AB1B0014081A /* PBXTargetDependency */,
+			);
+			name = RecorderTabajaraUITests;
+			productName = RecorderTabajaraUITests;
+			productReference = 06BB14C11DD0AB1B0014081A /* RecorderTabajaraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		06BB14C91DD0AB1B0014081A /* RecorderTabajara WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BB14F11DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajara WatchKit App" */;
+			buildPhases = (
+				06BB14C81DD0AB1B0014081A /* Resources */,
+				06BB14F01DD0AB1B0014081A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06BB14DC1DD0AB1B0014081A /* PBXTargetDependency */,
+			);
+			name = "RecorderTabajara WatchKit App";
+			productName = "RecorderTabajara WatchKit App";
+			productReference = 06BB14CA1DD0AB1B0014081A /* RecorderTabajara WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		06BB14D81DD0AB1B0014081A /* RecorderTabajara WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06BB14ED1DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajara WatchKit Extension" */;
+			buildPhases = (
+				06BB14D51DD0AB1B0014081A /* Sources */,
+				06BB14D61DD0AB1B0014081A /* Frameworks */,
+				06BB14D71DD0AB1B0014081A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RecorderTabajara WatchKit Extension";
+			productName = "RecorderTabajara WatchKit Extension";
+			productReference = 06BB14D91DD0AB1B0014081A /* RecorderTabajara WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06BB149A1DD0AB1A0014081A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Gustavo Gomes de Oliveira";
+				TargetAttributes = {
+					06BB14A11DD0AB1A0014081A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J5ZWQ2W9CE;
+						ProvisioningStyle = Automatic;
+					};
+					06BB14B51DD0AB1B0014081A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J5ZWQ2W9CE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 06BB14A11DD0AB1A0014081A;
+					};
+					06BB14C01DD0AB1B0014081A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J5ZWQ2W9CE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 06BB14A11DD0AB1A0014081A;
+					};
+					06BB14C91DD0AB1B0014081A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J5ZWQ2W9CE;
+						ProvisioningStyle = Automatic;
+					};
+					06BB14D81DD0AB1B0014081A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J5ZWQ2W9CE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 06BB149D1DD0AB1A0014081A /* Build configuration list for PBXProject "RecorderTabajara" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06BB14991DD0AB1A0014081A;
+			productRefGroup = 06BB14A31DD0AB1A0014081A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06BB14A11DD0AB1A0014081A /* RecorderTabajara */,
+				06BB14B51DD0AB1B0014081A /* RecorderTabajaraTests */,
+				06BB14C01DD0AB1B0014081A /* RecorderTabajaraUITests */,
+				06BB14C91DD0AB1B0014081A /* RecorderTabajara WatchKit App */,
+				06BB14D81DD0AB1B0014081A /* RecorderTabajara WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06BB14A01DD0AB1A0014081A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB14B01DD0AB1B0014081A /* LaunchScreen.storyboard in Resources */,
+				06BB14AD1DD0AB1B0014081A /* Assets.xcassets in Resources */,
+				06BB14AB1DD0AB1B0014081A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14B41DD0AB1B0014081A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14BF1DD0AB1B0014081A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14C81DD0AB1B0014081A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB14D31DD0AB1B0014081A /* Assets.xcassets in Resources */,
+				06BB14D11DD0AB1B0014081A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14D71DD0AB1B0014081A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB14E91DD0AB1B0014081A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06BB149E1DD0AB1A0014081A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F4FAA61DD342DB00D4482A /* CellTableViewCell.swift in Sources */,
+				06BB14A81DD0AB1A0014081A /* ViewController.swift in Sources */,
+				06BB14A61DD0AB1A0014081A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14B21DD0AB1B0014081A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB14BB1DD0AB1B0014081A /* RecorderTabajaraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14BD1DD0AB1B0014081A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB14C61DD0AB1B0014081A /* RecorderTabajaraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06BB14D51DD0AB1B0014081A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BB14E51DD0AB1B0014081A /* NotificationController.swift in Sources */,
+				06BB14E71DD0AB1B0014081A /* ComplicationController.swift in Sources */,
+				06BB14E31DD0AB1B0014081A /* ExtensionDelegate.swift in Sources */,
+				06BB14E11DD0AB1B0014081A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06BB14B81DD0AB1B0014081A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BB14A11DD0AB1A0014081A /* RecorderTabajara */;
+			targetProxy = 06BB14B71DD0AB1B0014081A /* PBXContainerItemProxy */;
+		};
+		06BB14C31DD0AB1B0014081A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BB14A11DD0AB1A0014081A /* RecorderTabajara */;
+			targetProxy = 06BB14C21DD0AB1B0014081A /* PBXContainerItemProxy */;
+		};
+		06BB14CD1DD0AB1B0014081A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BB14C91DD0AB1B0014081A /* RecorderTabajara WatchKit App */;
+			targetProxy = 06BB14CC1DD0AB1B0014081A /* PBXContainerItemProxy */;
+		};
+		06BB14DC1DD0AB1B0014081A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06BB14D81DD0AB1B0014081A /* RecorderTabajara WatchKit Extension */;
+			targetProxy = 06BB14DB1DD0AB1B0014081A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06BB14A91DD0AB1B0014081A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BB14AA1DD0AB1B0014081A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06BB14AE1DD0AB1B0014081A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BB14AF1DD0AB1B0014081A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		06BB14CF1DD0AB1B0014081A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06BB14D01DD0AB1B0014081A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06BB14EB1DD0AB1B0014081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06BB14EC1DD0AB1B0014081A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06BB14EE1DD0AB1B0014081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = "RecorderTabajara WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajara.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		06BB14EF1DD0AB1B0014081A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = "RecorderTabajara WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajara.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		06BB14F21DD0AB1B0014081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				IBSC_MODULE = RecorderTabajara_WatchKit_Extension;
+				INFOPLIST_FILE = "RecorderTabajara WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajara.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		06BB14F31DD0AB1B0014081A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				IBSC_MODULE = RecorderTabajara_WatchKit_Extension;
+				INFOPLIST_FILE = "RecorderTabajara WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajara.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		06BB14F61DD0AB1B0014081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = RecorderTabajara/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		06BB14F71DD0AB1B0014081A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = RecorderTabajara/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		06BB14F91DD0AB1B0014081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = RecorderTabajaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecorderTabajara.app/RecorderTabajara";
+			};
+			name = Debug;
+		};
+		06BB14FA1DD0AB1B0014081A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = RecorderTabajaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecorderTabajara.app/RecorderTabajara";
+			};
+			name = Release;
+		};
+		06BB14FC1DD0AB1B0014081A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = RecorderTabajaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RecorderTabajara;
+			};
+			name = Debug;
+		};
+		06BB14FD1DD0AB1B0014081A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J5ZWQ2W9CE;
+				INFOPLIST_FILE = RecorderTabajaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.bepid.RecorderTabajaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RecorderTabajara;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06BB149D1DD0AB1A0014081A /* Build configuration list for PBXProject "RecorderTabajara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BB14EB1DD0AB1B0014081A /* Debug */,
+				06BB14EC1DD0AB1B0014081A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BB14ED1DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajara WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BB14EE1DD0AB1B0014081A /* Debug */,
+				06BB14EF1DD0AB1B0014081A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BB14F11DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajara WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BB14F21DD0AB1B0014081A /* Debug */,
+				06BB14F31DD0AB1B0014081A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BB14F51DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BB14F61DD0AB1B0014081A /* Debug */,
+				06BB14F71DD0AB1B0014081A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BB14F81DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajaraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BB14F91DD0AB1B0014081A /* Debug */,
+				06BB14FA1DD0AB1B0014081A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06BB14FB1DD0AB1B0014081A /* Build configuration list for PBXNativeTarget "RecorderTabajaraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06BB14FC1DD0AB1B0014081A /* Debug */,
+				06BB14FD1DD0AB1B0014081A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06BB149A1DD0AB1A0014081A /* Project object */;
+}
